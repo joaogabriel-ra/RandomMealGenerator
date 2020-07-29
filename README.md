@@ -1,10 +1,10 @@
-**Desktop** 
-
-![desktop](https://imgur.com/CfYIScR)
-
 **Mobile** 
 
-![mobile](https://imgur.com/gQIWLB8)
+![mobile](https://i.imgur.com/gQIWLB8.png)
+
+**Desktop** 
+
+![desktop](https://i.imgur.com/CfYIScR.png)
 
 This application is a Random Meal Generator :pizza: from the [App Ideas Collection :ledger:](https://github.com/florinpop17/app-ideas/blob/master/Projects/1-Beginner/Random-Meal-Generator.md).
 

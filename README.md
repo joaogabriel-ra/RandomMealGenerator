@@ -10,7 +10,7 @@ This application is a Random Meal Generator :pizza: from the [App Ideas Collecti
 
 It solves the following user stories:
 
-* User can click a button that will get a random meal from an external API (see below)
+* User can click a button that will get a random meal from an external API
 * The app should display: Recipe name, Ingredients, Instructions and a Picture of the meal
 * By clicking the button again, another meal will be generated
 * The app should display a YouTube Video

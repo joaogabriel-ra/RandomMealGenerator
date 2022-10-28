@@ -1,9 +1,21 @@
-import React from 'react';
-import { render } from '@testing-library/react';
-import App from './App';
+import { render, screen } from "@testing-library/react";
+import React from "react";
+import App from "./App";
 
-test('renders learn react link', () => {
-  const { getByText } = render(<App />);
-  const linkElement = getByText(/learn react/i);
-  expect(linkElement).toBeInTheDocument();
+describe("App", () => {
+  test("should render the app", () => {
+    render(<App />);
+
+    const text = screen.getByText(/feeling hungry/i);
+    expect(text).toBeInTheDocument();
+  });
+
+  //TO DO: Implement dark mode
+  // test("should render the dark mode switch", () => {
+  //   render(<App />);
+
+  //   const darkModeSwitch = screen.queryByRole("switch");
+
+  //   expect(darkModeSwitch as HTMLElement).toBeInTheDocument();
+  // });
 });

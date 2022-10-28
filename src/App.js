@@ -1,13 +1,13 @@
-import React from 'react';
-import Header from './components/header';
-import Main from './pages/main/index';
-import './App.css';
+import React from "react";
+import "./App.scss";
+import Header from "./components/Header/Header";
+import Meal from "./components/Meal/Meal";
 
 function App() {
   return (
     <div className="App">
       <Header />
-      <Main />
+      <Meal />
     </div>
   );
 }

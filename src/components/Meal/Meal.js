@@ -9,7 +9,6 @@ const Meal = () => {
   const url = "https://www.themealdb.com/api/json/v1/1/random.php";
 
   const handleGetMeal = async () => {
-    console.log("chamou");
     await fetch(url)
       .then((result) => result.json())
       .then((json) => {

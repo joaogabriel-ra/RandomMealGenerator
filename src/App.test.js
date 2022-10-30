@@ -1,5 +1,6 @@
 import { render, screen } from "@testing-library/react";
 import React from "react";
+
 import App from "./App";
 
 describe("App", () => {
@@ -10,12 +11,11 @@ describe("App", () => {
     expect(text).toBeInTheDocument();
   });
 
-  //TO DO: Implement dark mode
-  // test("should render the dark mode switch", () => {
-  //   render(<App />);
+  test("should render the dark mode switch", () => {
+    render(<App />);
 
-  //   const darkModeSwitch = screen.queryByRole("switch");
+    const darkModeSwitch = screen.queryByRole("switch");
 
-  //   expect(darkModeSwitch as HTMLElement).toBeInTheDocument();
-  // });
+    expect(darkModeSwitch).toBeInTheDocument();
+  });
 });

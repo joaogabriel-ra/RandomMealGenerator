@@ -1,12 +1,13 @@
-import { render, screen, waitForElement } from "@testing-library/react";
+import { render, screen, waitFor } from "@testing-library/react";
 import React from "react";
+
 import Meal from "./Meal";
 
 describe("Meal", () => {
   test("should render the title", () => {
     render(<Meal />);
 
-    const text = screen.getByText(/get a random meal by clicking below/i);
+    const text = screen.getByText(/feeling hungry/i);
 
     expect(text).toBeInTheDocument();
   });
@@ -19,7 +20,7 @@ describe("Meal", () => {
     expect(button).toBeInTheDocument();
   });
 
-  test("should render a random meal", () => {
+  test("should render a random meal", async () => {
     render(<Meal />);
 
     const button = screen.queryByRole("get-meal");
@@ -27,13 +28,25 @@ describe("Meal", () => {
 
     expect(button).toBeInTheDocument();
 
-    waitForElement(() => {
+    await waitFor(() => {
       expect(screen.getByTestId("meal-img")).toBeInTheDocument();
+    });
+    await waitFor(() => {
       expect(screen.getByTestId("meal-category")).toBeInTheDocument();
+    });
+    await waitFor(() => {
       expect(screen.getByTestId("meal-area")).toBeInTheDocument();
+    });
+    await waitFor(() => {
       expect(screen.getByTestId("meal-ingredients")).toBeInTheDocument();
+    });
+    await waitFor(() => {
       expect(screen.getByTestId("meal-instructions")).toBeInTheDocument();
+    });
+    await waitFor(() => {
       expect(screen.getByTestId("meal-video")).toBeInTheDocument();
+    });
+    await waitFor(() => {
       expect(screen.getByTestId("meal")).toBeInTheDocument();
     });
   });

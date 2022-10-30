@@ -1,6 +1,6 @@
 import React from "react";
 import "./Header.scss";
 
-const Header = () => <header id="main-header">Feeling hungry?</header>;
+const Header = () => <header id="main-header">Random Meal Generator</header>;
 
 export default Header;

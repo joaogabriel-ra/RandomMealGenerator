@@ -6,7 +6,7 @@ describe("Header", () => {
   test("should render", () => {
     render(<Header />);
 
-    const text = screen.getByText(/feeling hungry/i);
+    const text = screen.getByText(/random meal generator/i);
     expect(text).toBeInTheDocument();
   });
 });

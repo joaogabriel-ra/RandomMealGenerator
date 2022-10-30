@@ -1,6 +1,8 @@
-import { Button } from "@material-ui/core";
-import Grid from "@material-ui/core/Grid";
+import Box from "@mui/material/Box";
+import Button from "@mui/material/Button";
+import Grid from "@mui/material/Grid";
 import React, { useState } from "react";
+
 import "./Meal.scss";
 
 const Meal = () => {
@@ -31,7 +33,13 @@ const Meal = () => {
 
   return (
     <div className="meal">
-      <h3>Get a random meal by clicking below</h3>
+      <h3>
+        Feeling hungry?
+        <span style={{ marginLeft: 5 }} role="img" aria-label="pizza">
+          🍕
+        </span>
+      </h3>
+
       <Button
         variant="contained"
         color="primary"
@@ -39,15 +47,12 @@ const Meal = () => {
         onClick={handleGetMeal}
         role="get-meal"
       >
-        Get Meal{" "}
-        <span role="img" aria-label="pizza">
-          🍕
-        </span>
+        Get Meal
       </Button>
       {meal && (
-        <article key={meal.idMeal}>
+        <Box style={{ padding: 30 }} sx={{ boxShadow: 3 }} key={meal.idMeal}>
           <Grid container spacing={3}>
-            <Grid item xs={4}>
+            <Grid item xs={12} sm={4}>
               <Grid data-testid="meal-img" item xs={12}>
                 <img src={meal.strMealThumb} href="" alt=""></img>
               </Grid>
@@ -72,7 +77,7 @@ const Meal = () => {
                 </ul>
               </Grid>
             </Grid>
-            <Grid item xs={8}>
+            <Grid item xs={12} sm={8}>
               <Grid data-testid="meal" item xs={12}>
                 <h3>{meal.strMeal}</h3>
               </Grid>
@@ -89,7 +94,7 @@ const Meal = () => {
               </div>
             </Grid>
           </Grid>
-        </article>
+        </Box>
       )}
     </div>
   );

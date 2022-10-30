@@ -16,8 +16,8 @@ If you want to run this application on your machine you'll need:
 
 **Mobile** 
 
-![mobile](https://imgur.com/a/tOUJTNS)
+![mobile](https://imgur.com/a/tOUJTNS.png)
 
 **Desktop** 
 
-![desktop](https://i.imgur.com/CfYIScR.png)
+![desktop](https://imgur.com/a/LSf7WIT.png)

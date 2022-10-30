@@ -33,17 +33,17 @@ const Meal = () => {
 
   return (
     <div className="meal">
-      <h3>
+      <h2>
         Feeling hungry?
         <span style={{ marginLeft: 5 }} role="img" aria-label="pizza">
           🍕
         </span>
-      </h3>
+      </h2>
 
       <Button
         variant="contained"
         color="primary"
-        style={{ borderRadius: 25, margin: 15 }}
+        style={{ borderRadius: 25, marginBottom: 15 }}
         onClick={handleGetMeal}
         role="get-meal"
       >

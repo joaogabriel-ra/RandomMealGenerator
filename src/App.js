@@ -1,4 +1,4 @@
-import { styled } from "@mui/material";
+import { Grid, styled } from "@mui/material";
 import CssBaseline from "@mui/material/CssBaseline";
 import { createTheme, ThemeProvider } from "@mui/material/styles";
 import Switch from "@mui/material/Switch";
@@ -87,7 +87,11 @@ function App() {
             onChange={() => setColor(!color)}
           />
         </div>
-        <Meal />
+        <Grid container style={{ marginTop: 50 }}>
+          <Grid item xs={12}>
+            <Meal />
+          </Grid>
+        </Grid>
       </div>
     </ThemeProvider>
   );

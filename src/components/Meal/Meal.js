@@ -23,7 +23,7 @@ const Meal = () => {
     let ingredients = [];
 
     Object.getOwnPropertyNames(meal).forEach((property) => {
-      if (property.includes("strIngredient") && meal[property] !== "") {
+      if (property.includes("strIngredient") && meal[property]) {
         ingredients.push(meal[property]);
       }
     });

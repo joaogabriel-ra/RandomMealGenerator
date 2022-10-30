@@ -1,11 +1,3 @@
-**Mobile** 
-
-![mobile](https://i.imgur.com/gQIWLB8.png)
-
-**Desktop** 
-
-![desktop](https://i.imgur.com/CfYIScR.png)
-
 This application is a Random Meal Generator :pizza: from the [App Ideas Collection :ledger:](https://github.com/florinpop17/app-ideas/blob/master/Projects/1-Beginner/Random-Meal-Generator.md).
 
 It solves the following user stories:
@@ -21,3 +13,11 @@ If you want to run this application on your machine you'll need:
 
 * **[Install Node/NPM](https://nodejs.org/en/)**
 * **Run the application using npm start**
+
+**Mobile** 
+
+![mobile](https://imgur.com/a/tOUJTNS)
+
+**Desktop** 
+
+![desktop](https://i.imgur.com/CfYIScR.png)
